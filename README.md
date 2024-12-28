@@ -12,9 +12,9 @@
 <div>
   <h6>Block/Disable Hot Keys on Website [like f12 , ctrl+p , ctrl+U , ctrl+shift+I , ctrl+shift+C</h6>
   *js : <code>https://cdn.jsdelivr.net/gh/shubham-king/jsdelivr@main/js/block.js</code> <br>
-  *code to integrate : <code><div id="custom-notification" style="display:none; position:fixed; top:20px; right:20px; background-color:#f44336; color:white; padding:15px; border-radius:5px; z-index:1000; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  *code to integrate :<pre> <code>&lt;div id="custom-notification" style="display:none; position:fixed; top:20px; right:20px; background-color:#f44336; color:white; padding:15px; border-radius:5px; z-index:1000; box-shadow: 0 4px 6px rgba(0,0,0,0.1);"&gt;
   Hotkey disabled.
-</div></code>
+&lt;/div&gt;</code></pre>
   
 </div>
 
