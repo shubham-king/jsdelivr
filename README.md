@@ -17,7 +17,7 @@
   <strong>Usage</strong> :<pre> <code>&lt;div id="custom-notification" style="display:none; position:fixed; top:20px; right:20px; background-color:#f44336; color:white; padding:15px; border-radius:5px; z-index:1000; box-shadow: 0 4px 6px rgba(0,0,0,0.1);"&gt;
   Hotkey disabled.
 &lt;/div&gt;</code></pre> <br>
-  <strong>CSS</strong>: <pre><code>#custom-notification {
+  <strong>CSS</strong>: <pre><code>&lt;style&gt; #custom-notification {
       display: none;
       position: fixed;
       top: 20px;
@@ -53,7 +53,7 @@
           opacity: 0;
           transform: translateX(100%);
       }
-  }
+  }&lt;/style &gt;
   </code></pre>
   </div>
   </li>
