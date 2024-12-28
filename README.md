@@ -16,7 +16,45 @@
   <strong>JS</strong> : <code>https://cdn.jsdelivr.net/gh/shubham-king/jsdelivr@main/js/block.js</code> <br>
   <strong>Usage</strong> :<pre> <code>&lt;div id="custom-notification" style="display:none; position:fixed; top:20px; right:20px; background-color:#f44336; color:white; padding:15px; border-radius:5px; z-index:1000; box-shadow: 0 4px 6px rgba(0,0,0,0.1);"&gt;
   Hotkey disabled.
-&lt;/div&gt;</code></pre>
+&lt;/div&gt;</code></pre> <br>
+  <strong>CSS</strong>: <pre><code>#custom-notification {
+      display: none;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: #f44336;
+      color: white;
+      padding: 15px;
+      border-radius: 5px;
+      z-index: 1000;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      animation: slide-in 0.3s ease, slide-out 0.3s ease 2.7s forwards;
+  }
+
+  @keyframes slide-in {
+      from {
+          opacity: 0;
+          transform: translateX(100%);
+      }
+      to {
+          opacity: 1;
+          transform: translateX(0);
+      }
+  }
+
+  @keyframes slide-out {
+      from {
+          opacity: 1;
+          transform: translateX(0);
+      }
+      to {
+          opacity: 0;
+          transform: translateX(100%);
+      }
+  }
+  </code></pre>
   </div>
   </li>
 </ul>
