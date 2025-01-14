@@ -3,6 +3,9 @@
         // Get the referrer URL
         const referrer = document.referrer;
 
+        // Log the referrer for debugging
+        console.log('Referrer:', referrer);
+
         if (referrer) {
             try {
                 // Extract the domain from the referrer
@@ -27,6 +30,7 @@
     function showPopup() {
         const popup = document.getElementById('custom-popup');
         if (popup) {
+            console.log('Displaying popup.');
             popup.style.display = 'block';
         } else {
             console.error('Popup element not found.');
@@ -37,6 +41,7 @@
     function closePopup() {
         const popup = document.getElementById('custom-popup');
         if (popup) {
+            console.log('Closing popup.');
             popup.style.display = 'none';
         }
     }
