@@ -3,23 +3,26 @@ async function shortenUrl(apiKey, currentUrl) {
     const requestUrl = `${baseUrl}?api=${apiKey}&url=${encodeURIComponent(currentUrl)}`;
 
     try {
+      console.log('Requesting:', requestUrl); // Log the full request URL for debugging
+
       const response = await fetch(requestUrl, {
         method: 'GET',
       });
 
+      // Check for HTTP errors
       if (!response.ok) {
+        console.error('HTTP Error:', response.status, response.statusText);
         throw new Error('Failed to shorten the URL');
       }
 
-      // Handle the shortened URL
-      const shortenedUrl = await response.text(); // Assuming the API returns the shortened URL as plain text
+      const shortenedUrl = await response.text(); // Adjust this based on the actual API response format
       console.log('Shortened URL:', shortenedUrl);
 
-      // Optionally, open the shortened URL in a new tab
+      // Open the shortened URL in a new tab
       window.open(shortenedUrl, '_blank');
     } catch (error) {
       console.error('Error:', error.message);
-      alert('Something went wrong. Please try again.');
+      alert('Something went wrong. Please check the console for details.');
     }
   }
 
