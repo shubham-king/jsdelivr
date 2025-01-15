@@ -13,7 +13,7 @@ function getUrlWithoutProtocol(url) {
 
   document.getElementById('shortenBtn2').addEventListener('click', function() {
     const currentUrl = getUrlWithoutProtocol(window.location.href);
-    const baseUrl = 'https://arolinks.com/st?api=2527480de7d23ead092b57acf970c96b770c1a6f&url=';
+    const baseUrl = 'https://modijiurl.com/st?api=ea00541587f4df893ab238587ec4e5c084087172&url=';
     const finalUrl = baseUrl + encodeURIComponent(currentUrl);
 
     // Open the shortened URL in a new tab for Skip 2
