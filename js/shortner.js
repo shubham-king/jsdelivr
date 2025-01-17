@@ -1,24 +1,22 @@
-document.getElementById('shortenBtn1').addEventListener('click', function () {
-    // Ensure current URL is correctly detected
-    const currentUrl = window.location.href; // Get the current page URL directly
-    console.log("Detected URL:", currentUrl); // Debug: Log the detected URL
+document.getElementById('shortenBtn1').addEventListener('click', function() {
+    const currentUrl = window.location.href;  // Get the current URL
+    const url = new URL(currentUrl); // Create a URL object
+    const formattedUrl = url.hostname + url.pathname; // Extract hostname and pathname
 
-    // Construct the final URL
-    const encodedUrl = encodeURIComponent(currentUrl); // Encode the dynamic part
     const baseUrl = 'https://linkshortify.com/st?api=62719b77623132400c87e567f8b588dadc9b5205&url=';
-    const finalUrl = baseUrl + encodedUrl; // Combine base URL and encoded URL
+    const finalUrl = baseUrl + formattedUrl;
 
     // Open the shortened URL in a new tab for Skip 1
     window.open(finalUrl, '_blank');
 });
 
-document.getElementById('shortenBtn2').addEventListener('click', function () {
-    const currentUrl = window.location.href; // Get the current page URL directly
-    console.log("Detected URL:", currentUrl); // Debug: Log the detected URL
+document.getElementById('shortenBtn2').addEventListener('click', function() {
+    const currentUrl = window.location.href;  // Get the current URL
+    const url = new URL(currentUrl); // Create a URL object
+    const formattedUrl = url.hostname + url.pathname; // Extract hostname and pathname
 
-    const encodedUrl = encodeURIComponent(currentUrl); // Encode the dynamic part
     const baseUrl = 'https://linkshortify.com/st?api=62719b77623132400c87e567f8b588dadc9b5205&url=';
-    const finalUrl = baseUrl + encodedUrl; // Combine base URL and encoded URL
+    const finalUrl = baseUrl + formattedUrl;
 
     // Open the shortened URL in a new tab for Skip 2
     window.open(finalUrl, '_blank');
