@@ -1,5 +1,4 @@
- 
-        const specialDomains = ["lksfy.com", "animetamil.org"];
+const specialDomains = ["lksfy.com", "arolinks.com"];
 
         // Function to check if the referrer is from a special domain
         function isFromSpecialDomain(referrer, domains) {
@@ -65,4 +64,3 @@
 
         // Close the popup when clicking outside of it
         document.getElementById('overlay').addEventListener('click', hidePopup);
-
