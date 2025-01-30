@@ -1,16 +1,5 @@
-    <!-- Popup HTML -->
-    <div id="customPopup">
-        <h2>Welcome!</h2>
-        <p>You came from a special domain.</p>
-        <button id="closePopup">Close</button>
-    </div>
-
-    <!-- Overlay for the popup -->
-    <div id="overlay"></div>
-
-    <script>
-        // List of special domains
-        const specialDomains = ["lksfy.com", "arolinks.com"];
+ 
+        const specialDomains = ["lksfy.com", "animetamil.org"];
 
         // Function to check if the referrer is from a special domain
         function isFromSpecialDomain(referrer, domains) {
@@ -76,4 +65,4 @@
 
         // Close the popup when clicking outside of it
         document.getElementById('overlay').addEventListener('click', hidePopup);
-    </script>
+
